@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validate.js"></script>
+</head>
+
+<body>
+
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="container">
+
+            <h1 align="center">Sign Up</h1>
+            <center>
+                <p>Please fill in this form to create an account.</p>
+            </center>
+            <hr>
+
+            <div class="name-input">
+                <label for="name"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" name="name" id="name">
+
+                <span class="input-group-btn" style="width:0px;"></span>
+
+                <label for="last-name"><b>Last Name</b></label>
+                <input type="text" placeholder="last-name" name="last-name" id="last-name">
+            </div>
+
+            <div>
+
+                <label for="mobile"><b>Mobile No</b></label>
+                <input type="text" placeholder="Mobile No" name="mobile" id="mobile">
+            </div>
+            <div>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email">
+            </div>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw">
+            </div>
+            <div>
+                <label for="psw-confirm"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw-confirm" id="psw-confirm">
+            </div>
+            <div>
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+    </form>
+
+</body>
+
+</html>
