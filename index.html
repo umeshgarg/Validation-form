@@ -9,7 +9,7 @@
 
 <body>
 
-    <form name="myForm" onsubmit="return validateForm()" method="post">
+    <form name='myForm' onsubmit="validateForm(event);">
         <div class="container">
 
             <h1 align="center">Sign Up</h1>
@@ -46,10 +46,26 @@
                 <label for="psw-confirm"><b>Confirm Password</b></label>
                 <input type="password" placeholder="Confirm Password" name="psw-confirm" id="psw-confirm">
             </div>
+
             <div>
-                <button type="submit" class="registerbtn">Register</button>
+                <input type="submit" value="submit">
             </div>
+            <br>
+
+            <table align='center' border=1 cellspacing=2 cellpadding=5 id="table">
+                <tr>
+                    <th>First Name</th>
+                    <th>Second Name</th>
+                    <th>Mobile Number</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+
     </form>
+
+
 
 </body>
 
